@@ -1,0 +1,5 @@
+compile_commands.json
+ft_nm
+*.o
+*.d
+.cache
