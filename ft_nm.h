@@ -25,10 +25,18 @@ typedef enum e_flag
   p = 1 << 4,
 } t_flag;
 
+typedef enum e_arch
+{
+  unknown,
+  elf32,
+  elf64,
+} arch_t;
+
 typedef struct s_nm
 {
   char *filename;
   int fd;
+  arch_t arch;
 } t_nm;
 
 #endif
